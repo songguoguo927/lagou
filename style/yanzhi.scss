@@ -1,0 +1,160 @@
+@charset "utf-8";
+@import "./variable.scss";
+
+#yanzhi {
+  .header {
+    background: url(#{$img-folder}yanzhi-top.jpg) 0 0 no-repeat;
+    color: white;
+    text-align: center;
+    height: 160px;
+    padding: 20px;
+    h2 {
+      line-height: 45px;
+    }
+  }
+  i {
+    &.support_btn {
+      display: inline-block;
+      width: 14px;
+      height: 14px;
+      background: url(#{$img-folder}点赞.svg) center center no-repeat;
+      vertical-align: text-bottom;
+    }
+    &.icon_expand {
+        &:hover{
+            transform: rotate(180deg);
+        }
+        .answer_summary {
+            display: block;
+          }
+      &:hover {
+        
+        + .answer_summary {
+          display: none;
+        }
+        ~ .answer_html {
+          display: block;
+        }
+        transform: rotate(180deg);
+        
+      }
+      
+    }
+  }
+  .main-container {
+    position: relative;
+    > a {
+      position: absolute;
+      left: 253px;
+      top: -30px;
+      color: #00b3ba;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .niming {
+      display: flex;
+      justify-content: center;
+      width: 80%;
+      margin: 0 auto;
+      .article {
+        position: relative;
+        box-shadow: 5px 0 5px -5px #ededed;
+        word-break: break-all;
+        text-align: justify;
+        flex: 2;
+        border-right: 1px solid #eee;
+        margin-left: 100px;
+        margin-bottom: 150px;
+        .list {
+          padding: 20px;
+          li {
+            border-bottom: 1px solid #eee;
+            margin-bottom: 20px;
+            .news_answer {
+              .item_header {
+                position: relative;
+                padding: 10px 0;
+              }
+              .item_status {
+                margin-bottom: 20px;
+              }
+              .dianzan-num {
+                position: absolute;
+                top: 101px;
+                left: -64px;
+              }
+              .item-content {
+                position: relative;
+                h4.question_name {
+                  margin-bottom: 20px;
+                }
+                p.answer {
+                  max-height: 88px;
+                  margin-bottom: 6px;
+                  overflow: hidden;
+                  font-size: 14px;
+                  line-height: 22px;
+                  color: #777;
+                  cursor: pointer;
+                }
+                .answer_html {
+                  display: none;
+                }
+                i.icon_expand {
+                  position: absolute;
+                  top: 0;
+                  right: 20px;
+                }
+              }
+            }
+          }
+        }
+
+        img {
+          position: absolute;
+          left: -58px;
+          top: 12px;
+        }
+      }
+      .aside {
+        flex: 1;
+        text-align: center;
+        .login img {
+          width: 96px;
+          height: 96px;
+          overflow: hidden;
+          border-radius: 48px;
+          background-color: #f0f0f0;
+        }
+      }
+    }
+  }
+  
+}
+
+.many-follow {
+  text-align: initial;
+  margin-top: 30px;
+  padding: 30px;
+  border-top: 1px solid #eee;
+  border-right: 1px solid #eee;
+  margin-left: 30px;
+  .hot-talk {
+    margin-top: 10px;
+    .hot-talk1 {
+      .title-container {
+        font-size: 16px;
+        margin: 20px auto;
+      }
+      .howmany-follow {
+        color: #777;
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+div.item_status a {
+  font-size: 12px;
+  color: #b1b1b1;
+}

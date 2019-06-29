@@ -1,0 +1,60 @@
+@charset "utf-8";
+@import "./variable.scss";
+
+#collapse-nav {
+  width: 78%;
+  word-break: keep-all;
+  margin: 30px auto;
+  word-spacing: 10px;
+  .options {
+    background-color: #fafafa;
+    border: 1px solid #ededed;
+    padding: 10px;
+  }
+  .paixu {
+    @extend .options;
+    margin-top: 15px;
+    label {
+      float: right;
+    }
+  }
+  .nav1 {
+    position: relative;
+    margin-bottom: 11px;
+    span {
+      font-weight: 600;
+    }
+    .morelink {
+      position: absolute;
+      right: 0;
+      &:hover+div.limit-height{
+        height: auto;
+    }
+    }
+    .limit-height {
+      height: 22px;
+      overflow: hidden;
+      line-height: 22px;
+    }
+  }
+  .citys {
+    display: inline;
+    a {
+      padding: 5px 10px;
+      &:hover {
+        border-radius: 5px;
+        background: $theme-color;
+        color: white;
+      }
+      &:first-child {
+        background: $theme-color;
+        color: white;
+      }
+    }
+  }
+}
+a.morelink:hover {
+  > i.icon_expand {
+    transform: rotate(180deg);
+  }
+}

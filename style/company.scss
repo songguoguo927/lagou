@@ -1,0 +1,57 @@
+@charset "utf-8";
+@import "./variable.scss";
+
+#commpany-banner{
+    margin-bottom: 20px;
+    background: #00a38b;
+height: 387px;
+width: 100%;
+overflow: hidden;
+position: relative;
+    i{
+        width: 47px;
+        height: 100px;
+        display: inline-block;
+        position: absolute;
+        background: url(#{$img-folder}gongsi/arrow.png) no-repeat;
+      &.left-arrow{
+        left: 178px;
+        top: 150px;
+        background-position: left top;
+     }  
+     &.right-arrow{
+        right: 178px;
+        top: 150px;
+        background-position: right top;   
+     }
+    }
+    h3{
+        font-size: 30px;
+        color: #fff;
+        text-shadow: 0 3px 9px rgba(0,0,0,.25);
+        height: 42px;
+        padding: 25px 0 20px;
+        text-align: center;
+    }
+    .show-imgs{
+        height: 240px;
+        width: 896px;
+        overflow: hidden;
+        margin: 51px auto;
+        .company-imgs{
+            height: inherit;
+            width:4440px;
+        }
+        .img-panel{
+            width: 142px;
+            height: 202px;
+            background-color: rgba(255,255,255,.8);
+            margin-left: 33px;        
+        }
+    }
+}
+img.company {
+    width: 142px;
+    height: 142px;
+     padding: 9px;
+}

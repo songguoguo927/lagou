@@ -1,0 +1,207 @@
+@charset "utf-8";
+@import "./variable.scss";
+
+#search .hot-search ul li a {
+  color: $theme-color;
+}
+/* 城市下的公司展示 */
+.city-company-tab .tab-container {
+  display: grid;
+  grid-template-columns: repeat(8, auto);
+  width: 80%;
+  margin: 20px auto;
+  grid-row-gap: 40px;
+  text-align: center;
+  .show-company-img {
+    width: 70px;
+    height: 100px;
+    img {
+      width: 66px;
+      height: 66px;
+      border-radius: 50%;
+      &:hover {
+        border: 2px solid #00b38a;
+      }
+    }
+  }
+}
+/* 一个示例公司介绍 */
+#company-detail {
+  width: 80%;
+  margin: 0 auto;
+  .company-intro {
+    display: block;
+    padding: 25px 30px 30px;
+    overflow: hidden;
+    background: #fafafa;
+    h3 {
+      height: 28px;
+      margin: 0;
+      line-height: 28px;
+      font-size: 20px;
+      color: #333;
+    }
+    .company-base-info {
+      height: 20px;
+      line-height: 20px;
+      margin-top: 20px;
+      word-spacing: 28px;
+    }
+    .company-desc {
+      margin: 27px 0;
+    }
+  }
+  .company-imgs {
+    word-spacing: 16px;
+  }
+}
+
+/*重写轮播一块*/
+#main-container .lunbotu {
+  .big-img img {
+    width: 840px;
+    height: 220px;
+    animation: lunbotu 6s ease infinite alternate;
+  }
+  .lunbotu-container {
+    height: 220px;
+  }
+  div.small-img {
+    margin-top: 15px;
+    img {
+      width: 160px;
+      height: 60px;
+    }
+  }
+}
+@keyframes lunbotu {
+  0%,
+  25% {
+    transform: translateX(0);
+  }
+  40%,
+  65% {
+    transform: translateX(-840px);
+  }
+  80%,
+  100% {
+    transform: translateX(-1680px);
+  }
+}
+
+/* 活动广场样式 */
+#active-square {
+  .tab-nav {
+    line-height: 22px;
+    color: #999;
+    font-size: 16px;
+    border-bottom: 1px solid #e8e8e8;
+    height: 35px;
+    margin-top: 20px;
+    span {
+      padding-bottom: 14px;
+      color: #333;
+      cursor: default;
+      border-bottom: 2px solid #333;
+      margin-left: 153px;
+    }
+  }
+  .img-container {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    width: 80%;
+    margin: 20px auto;
+    img:after {
+      content: attr(data-title);
+      position: absolute;
+      bottom: 0;
+      border: 1px solid rebeccapurple;
+    }
+    .img-title {
+      position: relative;
+    }
+    span {
+      padding: 0 0 0 16px;
+      height: 38px;
+      line-height: 38px;
+      color: #ccc;
+      font-size: 14px;
+      background-color: rgba(0, 0, 0, 0.2);
+      position: absolute;
+      z-index: 100;
+      left: 0;
+      bottom: 3px;
+      width: 94%;
+      text-align: center;
+    }
+  }
+}
+
+
+/* footer2 */
+#global-footer {
+    /* 块级元素定位，浮动后，宽高度由内容 撑开 */
+    /* width: 100%; */
+    margin-top: 50px;
+    height: 68px;
+    background-color: #fff;
+    border-top: 1px solid #ebebeb;
+    .container {
+        text-align: center;
+      word-spacing: 10px;
+      margin: 0 auto;
+      background: url(#{$img-folder}footer_lagou_icon_75f0ebc.png) 121px 16px
+        no-repeat #fff;
+      background-size: 198px 19px;
+      padding-top: 16px;
+      .quick-links .item{
+        a.youtu {
+            position: relative;
+            &:hover > .qrContainer {
+                display: block;
+              }
+              
+          }
+          .qrContainer {
+            position: absolute;
+            top: -272px;
+            display: none;
+          }
+      }
+    }
+    .addtions{
+        height: 22px;
+        line-height: 1;
+        color: #d5d5d5;
+        font-size: 12px;
+        text-align: center;
+        a{
+            @extend .addtions;
+            vertical-align: middle;
+        }
+      }
+  }
+
+/*具体公司展示一块的图标*/
+.company-base-info i{
+    display: inline-block;
+    width:15px;
+    height: 15px;
+    vertical-align: middle;/*让图标和文字对齐*/
+    &.icon-field{
+        background: url(#{$img-folder}xiaoyuan/类目\ 品类\ 分类\ 类别.svg) no-repeat;    
+    }
+    &.icon-finance{
+        background: url(#{$img-folder}xiaoyuan/折线图.svg) no-repeat;      
+    }
+    &.icon-person{
+        background: url(#{$img-folder}xiaoyuan/用户.svg) no-repeat;
+       
+    }
+    &.icon-location{
+        background: url(#{$img-folder}xiaoyuan/定位.svg) no-repeat;       
+    }
+    &.icon-recruit-position{
+        background: url(#{$img-folder}xiaoyuan/人员搜索.svg) no-repeat;       
+    }
+}
