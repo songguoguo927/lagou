@@ -1,5 +1,6 @@
 //通用样式
 @charset "utf-8";
+@import './variable.scss';
 * {
     margin: 0;
     padding: 0;
@@ -8,11 +9,6 @@
   html {
     scroll-behavior: smooth; /*回到顶部平滑过渡*/
   }
-  $font-size:14px;
-  $font-family:"Hiragino Sans GB" "Microsoft Yahei" SimSun, Arial "Helvetica Neue" Helvetica;
-  $color1:#333;
-  $color2:#555;
-  $theme-color:#00b38a;
   body{
     font:{
         size:$font-size;
@@ -32,7 +28,7 @@
     text-decoration: none;
     color: $color2;
   }
-  $img-folder:"./public/images/";
+  
   #back-top {
     background: url(#{$img-folder}backtop-new.png) left top no-repeat;
     width: 28px;
