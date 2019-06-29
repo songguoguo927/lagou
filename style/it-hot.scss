@@ -1,0 +1,46 @@
+@charset "utf-8";
+@import "./variable.scss";
+
+#it-hot div.company-list-wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 1200px;
+  margin: 20px auto;
+  grid-column-gap: 15px;
+  .company1 {
+    text-align: center;
+    width: 288px;
+    height: 220px;
+    padding: 20px 18px 0;
+    border: 1px solid #eaeeed;
+    background-color: #fff;
+    margin-bottom: 15px;
+    &:hover {
+      box-shadow: 0 0 5px #999;
+    }
+  }
+  div.company-detail {
+    border-bottom: 1px dashed #e0e0e0;
+    margin-bottom: 10px;
+  }
+  span {
+    color: #00b38a;
+    display: block;
+  }
+  > div{
+    img {
+        width: 50px;
+    }
+    p {
+    margin-bottom: 8px;
+    }
+  }
+  div.company-data ul li{
+    width: 30%;
+    &.middle {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    }
+  }
+}
+

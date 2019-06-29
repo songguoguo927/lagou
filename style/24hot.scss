@@ -1,0 +1,117 @@
+@charset "utf-8";
+@import "./variable.scss";
+
+#hot24 {
+  margin-top: 30px;
+  .job-list-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+    width: 80%;
+    margin: 33px auto;
+    .job1 {
+      width: 389px;
+      height: 200px;
+      /*以数字开头的id名规则不应用*/
+      /* margin: 42px 16px 15px 165px; */
+      padding: 20px 18px 0;
+      border: 1px solid #eaeeed;
+      background-color: #fff;
+      /* margin-left: 165px;*/
+      margin-bottom: 15px;
+      color: #999;
+      &:hover {
+        box-shadow: 0 0 5px #999;
+      }
+      .post-detail {
+        line-height: 25px;
+        word-spacing: 5px;
+        img {
+          vertical-align: middle;
+          margin-left: 5px;
+        }
+        .occupation {
+          color: initial;
+        }
+        .salary {
+          color: #fa6041;
+          float: right;
+        }
+        ul li {
+          width: 61px;
+          height: 26px;
+          padding: 0 5px;
+          font-size: 12px;
+          line-height: 26px;
+          color: #999;
+          border: 1px solid #f0f0f0;
+          border-radius: 3px;
+          text-align: center;
+        }
+        .require {
+          display: block;
+        }
+      }
+      .who-publish {
+        margin-top: 18px;
+        padding-top: 18px;
+        border-top: 1px dashed #e0e0e0;
+        img {
+          width: 40px;
+          height: 40px;
+          float: left;
+          margin-right: 10px;
+        }
+        .name {
+          color: $color2;
+        }
+      }
+    }
+  }
+}
+
+/* 一些相同结构样式--共用 */
+button.more-news {
+  position: relative;
+  left: 39%;
+  width: 350px;
+  height: 38px;
+  border: 1px solid $theme-color;
+  color: $theme-color;
+  background: white;
+}
+div.more-tips {
+  height: 30px;
+  line-height: 30px;
+  color: #999;
+  margin: 0 172px;
+  padding-top: 16px;
+  a {
+    color: $theme-color;
+    margin-left: 50px;
+  }
+  .wenhao {
+    background: #e6e6e6;
+    color: white;
+    border-radius: 50%;
+    height: 18px;
+    display: inline-block;
+    width: 18px;
+    text-align: center;
+    line-height: 18px;
+  }
+}
+ul.module-tabs {
+  margin: 0 152px;
+  word-spacing: 23px;
+  padding-bottom: 15px;
+  height: 40px;
+  line-height: 40px;
+}
+#hot24 .module-tabs,
+#it-hot .module-tabs {
+  border-bottom: 1px solid #e8e8e8;
+}
+#hot24 .module-tabs ul a:visited {
+  border-bottom: 2px solid;
+}
