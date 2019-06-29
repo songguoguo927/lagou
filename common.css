@@ -37,7 +37,7 @@ a {
   display: none;
 }
 #back-top:hover {
-  background: url(./public/images/backtop-new.png) right top no-repeat;
+  background-position:right top;
 }
 /* 配套<i class="icon_expand"></i> */
 i.icon_expand {
