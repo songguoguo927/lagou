@@ -1,0 +1,64 @@
+#commpany-banner{
+    margin-bottom: 20px;
+}
+#commpany-banner i{
+    width: 47px;
+    height: 100px;
+    display: inline-block;
+    position: absolute;
+    background: url(./public/images/gongsi/arrow.png) no-repeat;
+    
+}
+#commpany-banner i.left-arrow{
+   left: 178px;
+   top: 150px;
+   background-position: left top;
+}
+#commpany-banner i.right-arrow{
+   right: 178px;
+   top: 150px;
+   background-position: right top;
+
+}
+#commpany-banner{
+background: #00a38b;
+height: 387px;
+width: 100%;
+overflow: hidden;
+position: relative;
+}
+#commpany-banner h3{
+    font-size: 30px;
+    color: #fff;
+    text-shadow: 0 3px 9px rgba(0,0,0,.25);
+    height: 42px;
+    padding: 25px 0 20px;
+    text-align: center;
+}
+#commpany-banner .show-imgs{
+    /* display: flex */
+    height: 240px;
+    width: 896px;
+    overflow: hidden;
+    margin: 51px auto;
+}
+#commpany-banner .show-imgs .company-imgs{
+    height: inherit;
+    width:4440px;
+}
+#commpany-banner .show-imgs .company-imgs .img-panel{
+    /* position: absolute;
+    left: 0;
+    top: 0; */
+    width: 142px;
+    height: 202px;
+    /* background-color: #fff; */
+    background-color: rgba(255,255,255,.8);
+    margin-left: 33px;
+   
+}
+img.company {
+    width: 142px;
+    height: 142px;
+     padding: 9px;
+}

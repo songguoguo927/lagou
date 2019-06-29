@@ -1,0 +1,150 @@
+#yanzhi .header {
+  background: url(./public/images/yanzhi-top.jpg) 0 0 no-repeat;
+  color: white;
+  text-align: center;
+  height: 160px;
+  padding: 20px;
+}
+#yanzhi .header h2{
+  line-height: 45px;
+}
+#yanzhi .main-container {
+  position: relative;
+}
+#yanzhi .main-container > a {
+  position: absolute;
+  left: 253px;
+  top: -30px;
+  color: #00b3ba;
+  font-size: 20px;
+  font-weight: bold;
+}
+#yanzhi .main-container .niming .article {
+  position: relative;
+  /* width: 710px;
+    margin-right: 40px;
+    padding-right: 40px; */
+  box-shadow: 5px 0 5px -5px #ededed;
+  word-break: break-all;
+  text-align: justify;
+  flex: 2;
+  border-right: 1px solid #eee;
+  /* border-bottom: 1px solid #eee; */
+  margin-left: 100px; 
+  margin-bottom: 150px;
+}
+#yanzhi .main-container .niming .article .list{
+  padding: 20px;
+}
+#yanzhi .main-container .niming .article .list li{
+  border-bottom: 1px solid #eee;
+    margin-bottom: 20px;
+}
+  #yanzhi .main-container .niming .article .item_header{
+    position: relative;
+    padding: 10px 0;
+  }
+#yanzhi .main-container .niming .article img{
+  position: absolute;
+    left: -58px;
+    top: 12px;
+}
+h4.question_name{
+  margin-bottom: 20px;
+}
+.dianzan-num{
+  position: absolute;
+    top: 101px;
+    left: -64px;
+}
+#yanzhi i.support_btn{
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background: url(./public/images/点赞.svg) center center no-repeat;
+  vertical-align: text-bottom;
+}
+
+#yanzhi i.icon_expand:hover {
+  transform: rotate(180deg);
+}
+#yanzhi i.icon_expand .answer_summary{
+display: block;
+}
+#yanzhi i.icon_expand:hover + .answer_summary{
+  display: none;
+}
+#yanzhi i.icon_expand:hover ~ .answer_html{
+  display: block;
+}
+#yanzhi i.icon_expand:hover {
+  transform: rotate(180deg);
+}
+#yanzhi .main-container .niming {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+}
+
+#yanzhi .main-container .niming .aside {
+  flex: 1;
+  text-align: center;
+  /* border: 1px solid blue; */
+}
+#yanzhi .main-container .niming .login img {
+  width: 96px;
+  height: 96px;
+  overflow: hidden;
+  border-radius: 48px;
+  background-color: #f0f0f0;
+}
+
+#yanzhi .main-container .article .news_answer .item_status{
+  margin-bottom: 20px;
+}
+
+p.answer{
+  max-height: 88px;
+    margin-bottom: 6px;
+    overflow: hidden;
+    font-size: 14px;
+    line-height: 22px;
+    color: #777;
+    cursor: pointer;
+}
+.item-content .answer_html{
+  display: none;
+}
+.item-content{
+  position: relative;
+}
+.item-content  i.icon_expand{
+  position: absolute;
+  top: 0;
+  right: 20px;
+}
+div.item_status a{
+  font-size: 12px;
+    color: #b1b1b1;
+}
+.many-follow{
+  text-align: initial;
+  margin-top: 30px;
+  padding: 30px;
+  border-top: 1px solid #eee;
+  border-right: 1px solid #eee;
+  margin-left: 30px;
+}
+.many-follow .hot-talk{
+  margin-top:10px;
+}
+.many-follow .hot-talk .hot-talk1 .title-container{
+  /* font-weight: bold; */
+  font-size: 16px;
+  margin: 20px auto;
+}
+.many-follow .hot-talk .hot-talk1 .howmany-follow{
+  color: #777;
+  font-size: 12px;
+}

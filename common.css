@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth; /*回到顶部平滑过渡*/
+}
+body {
+  font-size: 14px;
+  font-family: "Hiragino Sans GB", "Microsoft Yahei", SimSun, Arial,
+    "Helvetica Neue", Helvetica;
+  color: #333;
+}
+
+.container-all {
+  min-width: 1366px;
+}
+ul li {
+  list-style: none;
+  display: inline-block;
+}
+a {
+  text-decoration: none;
+  color: #555;
+}
+#back-top {
+  background: url(./public/images/backtop-new.png) left top no-repeat;
+  width: 28px;
+  height: 46px;
+  position: fixed;
+  left: 50%;
+  bottom: 88px;
+  margin-left: 667px;
+  cursor: pointer;
+  z-index: 1002;
+  display: none;
+}
+#back-top:hover {
+  background: url(./public/images/backtop-new.png) right top no-repeat;
+}
+/* 配套<i class="icon_expand"></i> */
+i.icon_expand {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  background: url(./public/images/icon-fold_1aabd1f.png) center center no-repeat;
+  vertical-align: text-bottom;
+  transition: transform 0.5s;
+}
+
+/* 分页样式 */
+#pagination {
+  text-align: center;
+  margin-bottom: 150px;
+}
+#pagination button {
+  background: white;
+  color: #333;
+  padding: 5px 10px;
+  border: 1px solid #ededed;
+  font-size: 14px;
+  height: 34px;
+  vertical-align: middle;
+}
+#pagination button.checked-btn,
+#pagination button:hover {
+  background: #00b38a;
+  color: white;
+}
+/*按钮样式*/
+.middle-btn {
+  width: 106px;
+  height: 34px;
+  font-size: 15px;
+  line-height: 34px;
+}
+.large-btn {
+  width: 216px;
+  height: 46px;
+  font-size: 15px;
+  line-height: 34px;
+  margin-top: 20px;
+}
+.green-button {
+  border: 1px solid white;
+  background: #00b38a;
+  color: white;
+}
+.white-button {
+  border: 1px solid #00b38a;
+  background: white;
+  color: #00b38a;
+}
