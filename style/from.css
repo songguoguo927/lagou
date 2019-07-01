@@ -1,0 +1,73 @@
+#form {
+  background-image: url(../public/images/people.png);
+  height: 149px;
+  background-repeat: no-repeat;
+  background-color: #0dca9f;
+  background-size: contain;
+  background-position: 84px;
+  position: relative; }
+  #form form {
+    float: right;
+    position: absolute;
+    right: 110px;
+    top: 61px; }
+    #form form input[type="text"] {
+      height: 35px;
+      text-indent: 8px;
+      border: none; }
+    #form form input[type="submit"] {
+      width: 107px;
+      height: 35px;
+      font-size: 14px;
+      background-color: #0dca9f;
+      color: white;
+      font-weight: bolder;
+      border: 1px solid white;
+      margin-left: 4px;
+      -webkit-vertical-align: middle; }
+    #form form .tel {
+      margin-right: 15px; }
+    #form form .yzm {
+      width: 93px; }
+    #form form .yzm-btn {
+      width: 52px;
+      height: 35px;
+      color: #0dca9f;
+      background-color: white;
+      border: none;
+      vertical-align: top; }
+      #form form .yzm-btn::before {
+        content: "|";
+        color: #d5dadf; }
+
+#search {
+  background: #f2f5f4;
+  padding: 30px 0 28px;
+  min-width: 1200px;
+  text-align: center;
+  height: 132px; }
+  #search input {
+    width: 795px;
+    height: 46px;
+    text-indent: 17px;
+    border: none;
+    font-size: 15px; }
+  #search button {
+    width: 142px;
+    height: 46px;
+    border: none;
+    color: white;
+    background: #00b38a;
+    font-size: 1.2rem;
+    vertical-align: bottom; }
+    #search button:hover {
+      background: #00a57f; }
+  #search div.hot-search {
+    text-align: left;
+    margin-left: 20%; }
+    #search div.hot-search ul, #search div.hot-search ul li {
+      display: inline-block;
+      word-spacing: 20px;
+      margin-top: 5px; }
+
+/*# sourceMappingURL=from.css.map */
