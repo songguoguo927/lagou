@@ -2,13 +2,21 @@
   "name": "lagou",
   "version": "1.0.0",
   "description": "lagou webpage refactor",
-  "keywords": ["h5","c3","sass","gulp"],
-  "author": "jiam927", 
+  "keywords": [
+    "h5",
+    "c3",
+    "sass",
+    "gulp"
+  ],
+  "author": "jiam927",
   "license": "MIT",
   "devDependencies": {
     "gulp": "^4.0.2"
   },
   "scripts": {
     "dev": "gulp"
+  },
+  "dependencies": {
+    "gulp-sass": "^4.0.2"
   }
 }
