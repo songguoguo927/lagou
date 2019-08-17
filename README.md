@@ -39,7 +39,9 @@
 
 3，项目计划安排
 
-![lagou0.1 ->lagou1.1](https://user-gold-cdn.xitu.io/2019/8/17/16c9db4a93909b20?imageView2/0/w/1280/h/960/ignore-error/1)
+![lagou0.1 ->lagou1.1]()
+
+图片可能显示不出来，完整内容可查看我在掘金发的[文章](https://juejin.im/post/5d5779cdf265da039e12b8f3)
 
 
 ### 展望：对框架和工具，实际项目中还是要针对具体情况具体问题有选择性的使用。
