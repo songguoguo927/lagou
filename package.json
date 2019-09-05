@@ -13,6 +13,9 @@
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^6.1.0",
+    "gulp-minify-html": "^1.0.6",
+    "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.2",
     "node-sass": "^4.12.0"
   },
