@@ -75,10 +75,31 @@ scss文件组合
 
 方法2：@import 手动有序合并，就可以不用gulp-concat，不过gulp-concat可以合并其他文件
 
+出现问题：一些样式出现了互相干扰--考虑不只搞一个index.min.js
+
 ## 文件压缩
 css文件： sass自带css压缩风格（模式）输出/或使用gulp-minify-css
 html文件：gulp-minify-html
-图片压缩：gulp-imagemin
+图片压缩：gulp-imagemin 
+>Minify PNG, JPEG, GIF and SVG images with imagemin
+
+ 目前：gulp-imagemin: Minified 30 images (saved 138 kB - 14.3%)
+
+    由于我有images嵌套文件夹，所以去考虑到gulp.src的用途，匹配模式
+
+     .   点表示当前路径
+
+     通配符：
+
+     *  一个星号，匹配该路径段中0个或多个任意字符
+
+     ** 两个星号，不但匹配该路径段中0个或多个任意字符。而且还匹配形如“tj/pl/ab”这样的字符串，其实就是子文件夹了。
+
+now:gulp-imagemin: Minified 70 images (saved 478 kB - 17.9%)
+
+js压缩：gulp-uglify
+需求：
+修改文件名，例如将demo.css修改为demo.min.css
 ## 文件的重命名gulp-rename
 
 `gulp`会以输入的文件流的名称来命名处理后的文件名，因此，如果需要重命名文件时，可以使用 `gulp-rename`插件；

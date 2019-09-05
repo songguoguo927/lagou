@@ -1,0 +1,1 @@
+var backTop=document.getElementById("back-top");window.addEventListener("scroll",function(o){var e=document.documentElement.scrollTop||document.body.scrollTop;backTop.style.display=e<500?"none":"block"});
