@@ -98,6 +98,7 @@ html文件：gulp-minify-html
 now:gulp-imagemin: Minified 70 images (saved 478 kB - 17.9%)
 
 js压缩：gulp-uglify
+
 需求：
 修改文件名，例如将demo.css修改为demo.min.css
 ## 文件的重命名gulp-rename
