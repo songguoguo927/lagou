@@ -1,5 +1,4 @@
 @charset "utf-8";
-@import "./variable.scss";
 
 #yanzhi .header {
   background: url(#{$img-folder}yanzhi-top.jpg) 0 0 no-repeat;
@@ -60,7 +59,7 @@ h4.question_name {
   display: inline-block;
   width: 14px;
   height: 14px;
-  background: url(#{$img-folder}点赞.svg) center center no-repeat;
+  background: url(#{$img-folder}like.svg) center center no-repeat;
   vertical-align: text-bottom;
 }
 

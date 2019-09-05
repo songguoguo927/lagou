@@ -1,5 +1,4 @@
 @charset "utf-8";
-@import "./variable.scss";
 
 #search .hot-search ul li a {
   color: $theme-color;
@@ -189,19 +188,19 @@
     height: 15px;
     vertical-align: middle;/*让图标和文字对齐*/
     &.icon-field{
-        background: url(#{$img-folder}xiaoyuan/类目\ 品类\ 分类\ 类别.svg) no-repeat;    
+        background: url(#{$img-folder}xiaoyuan/category.svg) no-repeat;    
     }
     &.icon-finance{
-        background: url(#{$img-folder}xiaoyuan/折线图.svg) no-repeat;      
+        background: url(#{$img-folder}xiaoyuan/line.svg) no-repeat;      
     }
     &.icon-person{
-        background: url(#{$img-folder}xiaoyuan/用户.svg) no-repeat;
+        background: url(#{$img-folder}xiaoyuan/user.svg) no-repeat;
        
     }
     &.icon-location{
-        background: url(#{$img-folder}xiaoyuan/定位.svg) no-repeat;       
+        background: url(#{$img-folder}xiaoyuan/location.svg) no-repeat;       
     }
     &.icon-recruit-position{
-        background: url(#{$img-folder}xiaoyuan/人员搜索.svg) no-repeat;       
+        background: url(#{$img-folder}xiaoyuan/mansearch.svg) no-repeat;       
     }
 }
